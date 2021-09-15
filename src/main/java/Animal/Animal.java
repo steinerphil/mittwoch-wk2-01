@@ -1,6 +1,6 @@
 package Animal;
 
-public abstract class AbstractAnimal {
+public class Animal {
 
     // abstract String makeSound();
 

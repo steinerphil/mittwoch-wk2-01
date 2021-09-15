@@ -13,5 +13,10 @@ public class AnimalList {
         return head;
     }
 
-
+    @Override
+    public String toString() {
+        return " " +
+                "head=" + head +
+                '}';
+    }
 }

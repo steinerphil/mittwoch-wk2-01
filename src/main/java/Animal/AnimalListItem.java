@@ -1,16 +1,16 @@
 package Animal;
 
-public class AnimalListItem extends AbstractAnimal{
+public class AnimalListItem extends Animal {
 
-    private AbstractAnimal value;
+    private Animal value;
     private AnimalListItem next;
 
 
-    public AnimalListItem(AbstractAnimal value) {
+    public AnimalListItem(Animal value) {
         this.value = value;
     }
 
-    public AbstractAnimal getValue() {
+    public Animal getValue() {
         return value;
     }
 
@@ -18,7 +18,7 @@ public class AnimalListItem extends AbstractAnimal{
         return next;
     }
 
-    public void setValue(AbstractAnimal value) {
+    public void setValue(Animal value) {
         this.value = value;
     }
 
