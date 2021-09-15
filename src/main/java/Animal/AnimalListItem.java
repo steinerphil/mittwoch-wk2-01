@@ -25,9 +25,4 @@ public class AnimalListItem {
     public void setNext(AnimalListItem next) {
         this.next = next;
     }
-
-    //     @Override
-//     String makeSound() {
-//     return null;
-//    }
-    }
+}
