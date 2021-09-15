@@ -7,6 +7,9 @@ public class Main {
         Animal dog = new Animal("Dog");
         Animal cat = new Animal("Cat");
         Animal cow = new Animal("Cow");
+        Animal bear = new Animal("Bear");
+        Animal lion = new Animal("Lion");
+        Animal bird = new Animal("Bird");
 
         AnimalList firstList = new AnimalList();
 
@@ -15,7 +18,11 @@ public class Main {
 
         firstList.add(dog);
         firstList.add(cow);
+        firstList.add(lion);
         firstList.add(cat);
+        firstList.add(bear);
+        firstList.add(lion);
+        firstList.add(bird);
         System.out.println(firstList.toString());
         System.out.println("*************");
 

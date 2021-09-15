@@ -53,27 +53,40 @@ public class AnimalList {
         return true ;
     }
 
-    public boolean remove(Animal animalToRemove){
 
-        if(head.getValue() == animalToRemove){
+
+
+
+
+
+
+
+
+    public boolean remove(Animal animalToRemove){
+        if(head == null){
+            System.out.println("Error: trying to remove from empty list.");
+        }
+        else if(head.getValue() == animalToRemove){
             head = head.getNext();
         }
         else{
             AnimalListItem animalToCheck = head.getNext();
-            AnimalListItem prevAnimal = null;
-            while(animalToCheck.getValue() != animalToRemove){
+            AnimalListItem prevAnimal = head;
+            while(animalToCheck.getNext() != null){
+                if (animalToCheck.getValue() == animalToRemove){
+                    prevAnimal.setNext(animalToCheck.getNext());
+                    System.out.println(animalToRemove.getName() + " removed");
+                }
                 prevAnimal = animalToCheck;
                 animalToCheck = animalToCheck.getNext();
             }
-            prevAnimal.setNext(animalToCheck.getNext());
-
-
         }
 
 
 
 
-return true;
+
+        return true;
 
 
     }
