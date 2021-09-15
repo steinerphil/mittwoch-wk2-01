@@ -1,6 +1,6 @@
 package Animal;
 
-public class AnimalListItem extends Animal {
+public class AnimalListItem {
 
     private Animal value;
     private AnimalListItem next;
