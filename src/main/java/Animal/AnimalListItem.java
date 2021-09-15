@@ -1,19 +1,33 @@
 package Animal;
 
-public class AnimalListItem extends Animal{
+public class AnimalListItem extends AbstractAnimal{
 
-    private Animal value;
+    private AbstractAnimal value;
     private AnimalListItem next;
 
 
-    public AnimalListItem(Animal value) {
+    public AnimalListItem(AbstractAnimal value) {
         this.value = value;
     }
 
-    @Override
-    String makeSound() {
-        return null;
+    public AbstractAnimal getValue() {
+        return value;
     }
-}
 
+    public AnimalListItem getNext() {
+        return next;
+    }
 
+    public void setValue(AbstractAnimal value) {
+        this.value = value;
+    }
+
+    public void setNext(AnimalListItem next) {
+        this.next = next;
+    }
+
+    //     @Override
+//     String makeSound() {
+//     return null;
+//    }
+    }
