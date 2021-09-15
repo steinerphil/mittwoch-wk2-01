@@ -26,7 +26,7 @@ public class Main {
         System.out.println(firstList.toString());
         System.out.println("*************");
 
-        firstList.remove(cow);
+        firstList.remove(bird);
         System.out.println(firstList.toString());
         System.out.println("*************");
 

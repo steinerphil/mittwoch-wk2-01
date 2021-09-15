@@ -16,6 +16,9 @@ public class AnimalList {
         this.head = head;
     }
 
+
+
+
     @Override
     public String toString() {
         String result = "";
@@ -36,6 +39,10 @@ public class AnimalList {
         return "List: " + result;
     }
 
+
+
+
+
     public boolean add(Animal animalToAdd){
         AnimalListItem newInList = new AnimalListItem(animalToAdd);
         newInList.setNext(null);
@@ -54,15 +61,8 @@ public class AnimalList {
     }
 
 
-
-
-
-
-
-
-
-
     public boolean remove(Animal animalToRemove){
+
         if(head == null){
             System.out.println("Error: trying to remove from empty list.");
         }
@@ -80,15 +80,63 @@ public class AnimalList {
                 prevAnimal = animalToCheck;
                 animalToCheck = animalToCheck.getNext();
             }
+            if(animalToCheck.getValue() == animalToRemove){
+                prevAnimal.setNext(null);
+            }
         }
-
-
-
-
-
         return true;
-
-
     }
+
+
+//    public void remove(Animal item) {
+//
+//        if (head != null) {
+//            boolean matchFound = false;
+//
+//            AnimalListItem temp = head;
+//            while (temp.getNext() != null) {
+//                if (temp.getNext().getValue().getName() == item.getName()) {
+//                    if (temp.getNext().getNext() != null) {
+//                        temp.setNext(temp.getNext().getNext());
+//                    } else {
+//                        temp.setNext(null);
+//                    }
+//                    matchFound = true;
+//                }
+//                if (temp.getNext() == null) {
+//                    break;
+//                } else {
+//                    temp = temp.getNext();
+//                }
+//            }
+//
+//            if (head.getValue().getName() == item.getName()) {
+//                head = head.getNext();
+//                matchFound = true;
+//            }
+//
+//            if (!matchFound) {
+//                System.out.println("no match found");
+//            }
+//        } else {
+//            System.out.println("no elements");
+//        }
+//
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
